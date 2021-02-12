@@ -38,6 +38,8 @@ export default function Home({products}) {
 //   }
 //  }
 
+
+
 export async function getServerSideProps(){
   const res =  await fetch(`${baseUrl}/api/products`)
   const data = await res.json()
